@@ -1,0 +1,59 @@
+<br>
+<div class="bg-img mt-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        
+        <div class="col-sm-6">
+          <div class="page-header mt-5">
+            <h2 class="text-center " style="color:rgb(20, 20, 20) ;"><span class="glyphicon glyphicon-heart"></span>
+              <b> 'REGISTER HERE' </b>
+              <span class="glyphicon glyphicon-heart"></span>
+            </h2>
+          </div>
+          <form (submit)="submitdata()">
+            <div class="form-group">
+              <label for="nm">
+                <h4 style="color: rgb(21, 21, 23);"><b>Name:</b></h4>
+              </label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Name Here" name="name" [(ngModel)]="reg.name">
+            </div>
+
+
+            <div class="form-group">
+              <label for="add">
+                <h4 style="color: rgb(21, 21, 23);"><b>Address:</b></h4>
+              </label>
+              <textarea class="form-control" id="address" placeholder="Enter address here" name="address" [(ngModel)]="reg.address"></textarea>
+            </div>
+
+
+            <div class="form-group mt-3" >
+              <label for="email">
+                <h4 style="color: rgb(21, 21, 23);"><b>Email:</b></h4>
+              </label>
+              <input type="email" class="form-control" id="emailid"  name="emailid"  [(ngModel)]="reg.emailid">
+            </div>
+
+
+            <div class="form-group mt-3">
+              <label for="pwd">
+                <h4 style="color:rgb(21, 21, 23);"><b>Password:</b></h4>
+              </label>
+              <input type="password" class="form-control" id="password" name="password" [(ngModel)]="reg.password">
+            </div>
+
+           
+            <button type="submit" class="btn btn-success btn-lg"><b>Submit</b></button>
+            <button type="Reset" class="btn btn-danger btn-lg ms-3"><b>Reset</b></button>
+          </form>
+
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+    </div>
+  </div>
+  
